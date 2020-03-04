@@ -19,7 +19,20 @@ To compile, type:
 
 To Run, type: `./gradlew bootRun`
 
-### Find One or More Products
+## Features
+
+* Add new product data
+* Find product detail
+
+## Design
+
+This app uses a typical 2020 microservice tiers:
+
+* Controller
+* Service
+* Persistence
+
+### Find one or more Product Details
 Using curl, copy and paste this:
 
 ```shell script
@@ -39,7 +52,7 @@ curl -X POST 'http://localhost:8080/api/products' \
 }'
 ```
 
-### Add New Product
+### Add New Product Details
 
 ```shell script
 curl -X PUT 'http://localhost:8080/api/products' \
@@ -63,6 +76,7 @@ curl -X PUT 'http://localhost:8080/api/products' \
     ]
 }'
 ```
+
 
 ## Test
 
